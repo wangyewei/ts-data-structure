@@ -1,0 +1,16 @@
+{
+  "name": "@tds/queue",
+  "version": "1.0.0",
+  "main": "dist/queue.cjs.js",
+  "module": "dist/queue.esm-bundler.js",
+  "typings": "dist/index.d.ts",
+  "license": "MIT",
+  "buildOptions": {
+    "name": "TdsQueue",
+    "formats": [
+      "cjs",
+      "esm-bundler",
+      "global"
+    ]
+  }
+}
