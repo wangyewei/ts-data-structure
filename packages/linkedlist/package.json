@@ -1,0 +1,16 @@
+{
+  "name": "@tds/linkedlist",
+  "version": "1.0.0",
+  "main": "dist/linkedlist.cjs.js",
+  "module": "dist/linkedlist.esm-bundler.js",
+  "typings": "dist/index.d.ts",
+  "license": "MIT",
+  "buildOptions": {
+    "name": "TdsLinkedList",
+    "formats": [
+      "cjs",
+      "esm-bundler",
+      "global"
+    ]
+  }
+}

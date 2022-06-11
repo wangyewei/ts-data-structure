@@ -6,12 +6,14 @@ export class Stack<T> {
     this.stack = [...args]
   }
 
-  push(...item: T[]): void {
+  push(...item: T[]): T[] {
     this.stack.push(...item)
+    return this.stack
   }
 
-  pop(): void {
+  pop(): T[] {
     this.stack.pop()
+    return this.stack
   }
 
   peek(): T {
