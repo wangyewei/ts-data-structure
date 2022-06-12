@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script src="../dist/linkedlist.global.js"></script>
+    <script>
+      const { DoubledLinkedList } = TdsLinkedList
+
+      const doubledLinkedList = new DoubledLinkedList()
+
+      doubledLinkedList.add(1)
+      doubledLinkedList.add(2)
+      doubledLinkedList.add(3)
+
+      doubledLinkedList.remove(2)
+
+      doubledLinkedList.addAt(1, "在索引为1处添加的节点")
+
+      doubledLinkedList.removeAt(0)
+
+      doubledLinkedList.traverse((node) => console.log(node))
+      // Node {data: '在索引为1处添加的节点', next: Node, prev: null}
+      // Node {data: 3, next: null, prev: Node}
+    </script>
+  </body>
+</html>

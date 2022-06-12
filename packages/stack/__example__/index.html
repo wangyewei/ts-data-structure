@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script src="../dist/stack.global.js"></script>
+
+    <script>
+      const { Stack } = TdsStack
+
+      const stack = new Stack()
+
+      stack.push(1, 2, 3, 4)
+
+      stack.pop()
+
+      console.log(stack.isEmpty()) // false
+
+      console.log(stack.size()) // e
+
+      console.log(stack) // Stack {stack Array(3)} stack: [1, 2, 3]
+    </script>
+  </body>
+</html>

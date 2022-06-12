@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script src="../dist/queue.global.js"></script>
+    <script>
+      const { Queue } = TdsQueue
+
+      const queue = new Queue()
+
+      queue.enqueue(1, 2, 3, 4)
+
+      queue.dequeue()
+
+      console.log(queue.front()) // 2
+      console.log(queue.back()) // 4
+      console.log(queue.isEmpty()) // false
+      console.log(queue.size()) // 3
+
+      console.log(queue) // Queue {queue: Array(3)} queue: [2, 3, 4]
+    </script>
+  </body>
+</html>
